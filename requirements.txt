@@ -5,3 +5,5 @@ langchain_community
 langchain
 groq
 langchain-groq
+langchain-anthropic
+anthropic
