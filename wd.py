@@ -25,11 +25,10 @@ async def process_request(request: UserRequest):
     query = request.query
     result = request.result
 
-    prompt_template = f"""
-    
-    Use the following query, result, and instructions to create the Template below:
+    prompt_template = f"""    
+    Use the following query, data, and instructions to create the Template below:
     query: {query}
-    result: {result}
+    data: {result}
     instructions: Approach this template with a focus on utilizing your expert judgment and analytical capabilities. Wherever the template requires information, endeavor to provide accurate and fact-based content. Make informed assumptions for aspects that are generally recognized or can be substantiated with factual evidence. 
     When faced with uncertainties:
     - If there's substantial evidence to support a reasoned assumption, proceed to include it in the response. Your aim is to fill gaps with educated guesses that align closely with available data or recognized patterns.
